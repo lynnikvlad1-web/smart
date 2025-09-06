@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const loadingSpinner = document.getElementById('loading-spinner');
   const errorMessage = document.getElementById('error-message');
 
-  const API_BASE_URL = 'http://localhost:3000';
+  const API_BASE_URL = https://smart-71n5.onrender.com;
 
   // Загрузка списка каналов с сервера
   async function loadChannels() {
@@ -114,4 +114,5 @@ document.addEventListener('DOMContentLoaded', async () => {
       newsContainer.appendChild(newsItem);
     });
   }
+
 });
