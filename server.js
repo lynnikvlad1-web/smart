@@ -2,6 +2,9 @@ require('dotenv').config();
 const express = require('express');
 const { Telegraf } = require('telegraf');
 const axios = require('axios');
+app.use(cors({
+  origin: 'https://lynnikvlad1-web.github.io',
+}));
 
 const app = express();
 const PORT = 3000;
@@ -107,4 +110,5 @@ async function fetchNewsFromChannels(channelIds) {
 // Запуск сервера
 app.listen(PORT, () => {
   console.log(`Сервер запущен на порту ${PORT}`);
+
 });
