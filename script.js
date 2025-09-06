@@ -5,6 +5,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   const addChannelBtn = document.getElementById('add-channel-btn');
   const loadingSpinner = document.getElementById('loading-spinner');
   const errorMessage = document.getElementById('error-message');
+  const cors = require('cors');
+
+// Разрешаем запросы с GitHub Pages
+app.use(cors({
+  origin: 'https://lynnikvlad1-web.github.io',
+}));
 
   const API_BASE_URL = "https://smart-71n5.onrender.com";
 
@@ -116,4 +122,5 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
 });
+
 
