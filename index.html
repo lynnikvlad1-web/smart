@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Умная лента новостей</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Умная лента новостей</h1>
+    <nav>
+      <a href="#add-channel">Добавить канал</a>
+      <a href="#news-feed">Лента новостей</a>
+    </nav>
+  </header>
+
+  <!-- Форма для добавления канала -->
+  <section id="add-channel" class="add-channel">
+    <h2>Добавить канал:</h2>
+    <input type="text" id="channel-id" placeholder="ID канала (например, @stavropol_smi)" />
+    <button id="add-channel-btn">Добавить канал</button>
+    <div id="loading-spinner" class="spinner hidden"></div>
+    <p id="error-message" class="error hidden"></p>
+  </section>
+
+  <!-- Форма для выбора каналов -->
+  <section id="channel-list" class="channel-list">
+    <h2>Выберите каналы:</h2>
+    <form id="channel-form">
+      <!-- Каналы будут загружены здесь -->
+    </form>
+    <button id="submit-channels">Показать новости</button>
+  </section>
+
+  <!-- Лента новостей -->
+  <section id="news-feed" class="news-feed">
+    <h2>Лента новостей:</h2>
+    <div id="news-container"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Умная лента новостей</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
