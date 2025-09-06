@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   const addChannelBtn = document.getElementById('add-channel-btn');
   const loadingSpinner = document.getElementById('loading-spinner');
   const errorMessage = document.getElementById('error-message');
-  const cors = require('cors');
 
 // Разрешаем запросы с GitHub Pages
 app.use(cors({
@@ -122,5 +121,6 @@ app.use(cors({
   }
 
 });
+
 
 
